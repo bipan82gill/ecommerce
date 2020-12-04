@@ -21,6 +21,12 @@ const orderSchema = new mongoose.Schema({
         country:{type:String, required:true}
     },
     paymentMethod:{type:String, required:true},
+    paymentRequest:{
+            id:String,
+            status:String,
+            update:String,
+            email:String,
+    },
     itemsPrice:{type:String, required:true},
     shippingPrice:{type:String, required:true},
     taxPrice:{type:String, required:true},
